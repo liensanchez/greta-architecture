@@ -1,13 +1,22 @@
 import React from 'react'
+import './NavBar.css'
+
+
 
 function Navbar() {
   return (
     <>
-      <div>Gretta</div>
-      <button>Projects</button>
-      <button>Process</button>
-      <button>About</button>
-      <button>Get in touch</button>
+      <div className='menu'>
+        <h2>Gretta</h2>
+        
+        <div className="middlemenu">
+          <button>Projects</button>
+          <button>Process</button>
+          <button>About</button>
+        </div>
+
+        <button>Get in touch</button>
+      </div>
     </>
   )
 }
