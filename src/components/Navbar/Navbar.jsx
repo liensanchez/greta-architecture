@@ -15,7 +15,7 @@ function Navbar() {
           <button className="buttonMiddleMenu">About</button>
         </div>
 
-        <button>Get in touch</button>
+        <button className='buttonCallToAction'>Get in touch</button>
       </div>
     </>
   )
