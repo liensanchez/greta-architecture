@@ -1,0 +1,11 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'YourFontName', sans-serif;
+}
+
+@font-face {
+  font-family: 'YourFontName';
+  src: url('../src/assets/IBM-Plex-Sans/ibmplexsans/IBMPlexSans-Light.ttf') format('truetype'); /* Update the font file path and format as needed */
+  /* Add additional font-face properties if necessary */
+}

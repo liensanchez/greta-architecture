@@ -1,0 +1,46 @@
+.headerDisplay{
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.imgDisplay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.primaryImg{
+  position: relative;
+  z-index: 2;
+}
+
+.shadowImg{
+  filter: blur(4px);
+  transform: scale(1.5);
+  position: relative;
+}
+
+.headerContent{
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 60vh;
+  position: absolute;
+}
+
+.buttonCarouselSelector{
+  width: 70px;
+  height: 70px;
+  border: solid 2px #FF700A;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.imgCarouselSelector{
+  width: 100%;
+  height: 100%;
+}
