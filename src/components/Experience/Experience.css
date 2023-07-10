@@ -1,8 +1,16 @@
 .experienceContainer{
   background-color: #C3CDF0;
-  height: 60vh;
+  height: 50vh;
 }
 
 .decorImg{
   width: 100%;
+}
+
+.textContainer{
+  width: 50%;
+  position: absolute;
+  padding: 50px;
+  font-size: xx-large;
+  font-weight: bold;
 }
