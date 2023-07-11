@@ -40,6 +40,10 @@
   overflow: hidden;
 }
 
+.buttonCarouselSelector:hover{
+  transform: scale(1.1);
+}
+
 .imgCarouselSelector{
   width: 100%;
   height: 100%;

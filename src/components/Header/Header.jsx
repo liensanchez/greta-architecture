@@ -33,6 +33,7 @@ function Header() {
         </div>
 
         <div className="headerLeft">
+          <h2>Our work in images:</h2>
           {imgCarousel.map((img, index) => (
             <button key={index} onClick={() => setImgShow(img)} className='buttonCarouselSelector'>
               <img src={imgCarousel[index]} alt="" className='imgCarouselSelector'/>

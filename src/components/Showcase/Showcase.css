@@ -1,0 +1,49 @@
+.showcaseContainer{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10vh;
+}
+
+.showcaseCarousel{
+  display: flex;
+  flex-direction: column;
+}
+
+.showcaseCarouselSelector{
+  display: flex;
+  flex-direction: row;
+  background-color: aqua;
+}
+
+.showcaseCarouselButton{
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.showcaseCarouselButton:hover {
+  border-bottom-color: black;
+}
+
+.showcaseCarouselButtonOrder{
+  display: flex;
+  flex-direction: row;
+  font-size: x-large;
+  align-items: center;
+}
+
+.showcaseImg{
+  padding-top: 3vh;
+  width: 533px;
+  height: 400px;
+}
+
+.showcaseCarouselImg{
+  width: 100px;
+  height: 100px;
+}
+
+
+

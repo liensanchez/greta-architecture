@@ -1,28 +1,38 @@
-import React from 'react'
-import img1 from '../../assets/Project A - Image 1.png'
-import img2 from '../../assets/Project A - Image 3.png'
-import img3 from '../../assets/Project A - Image 6.png'
-import img4 from '../../assets/Project A - Image 10.png'
+import React, { useState } from 'react'
+import './Showcase.css'
+import outsideImg from '../../assets/Project A - Image 1.png'
+import livingroomImg from '../../assets/Project A - Image 3.png'
+import bathroomImg from '../../assets/Project A - Image 6.png'
+import kitchenImg from '../../assets/Project A - Image 10.png'
 
 
 function Showcase() {
+
+  const imgShowcaseCarousel = [
+    { img: outsideImg, name: "OutSide View" },
+    { img: livingroomImg, name: "Livingroom" },
+    { img: bathroomImg, name: "Bathroom" },
+    { img: kitchenImg, name: "Kitchen" },
+  ]
+
+  const [imgShowcase, setImgShowcase] = useState(imgShowcaseCarousel[0].img)
+
   return (
-    <div>
-      <div>
-        <img src={img1} alt="" />
-        <h2>Outside View</h2>
+    <div className='showcaseContainer'>
+      <div className="showcaseCarousel">
+      {imgShowcaseCarousel.map((item, index) => (
+            <button key={index} onClick={() => setImgShowcase(item.img)} className='showcaseCarouselButton'>
+              <div className='showcaseCarouselButtonOrder'>
+                <img src={item.img} alt="" className='showcaseCarouselImg'/>
+                <h2> {item.name}</h2>
+              </div>
+            </button>
+          ))}
       </div>
+
+
       <div>
-        <img src={img2} alt="" />
-        <h2>Living Room</h2>
-      </div>
-      <div>
-        <img src={img4} alt="" />
-        <h2>Kitchen</h2>
-      </div>
-      <div>
-        <img src={img3} alt="" />
-        <h2>Bathroom</h2>
+        <img src={imgShowcase} alt="" className='showcaseImg' />
       </div>
     </div>
   )
