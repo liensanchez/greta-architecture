@@ -13,7 +13,7 @@ function Header() {
 
   const imgCarousel= [image1, image2, image3, image4, image5, image6]
 
-  const [imgShow, setImgShow] = useState(imgCarousel[3])
+  const [imgShow, setImgShow] = useState(imgCarousel[0])
 
   return (
     <div className='headerDisplay'>

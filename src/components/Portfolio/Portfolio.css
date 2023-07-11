@@ -1,0 +1,44 @@
+.portfolioContainer{
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.portfolioDisplay {
+  position: relative;
+}
+
+.imageContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.portfolioText {
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 100%;
+}
+
+
+
+.buttonShowProject{
+  border: none;
+  background-color: transparent;
+  background-image: url('../../assets/vector.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: wheat;
+  padding: 15px;
+  transition: 0.8s ease;
+  font-size: 20px;
+}
+
+.buttonShowProject:hover{
+  transform: scale(1.1);
+}
