@@ -1,0 +1,27 @@
+.footerContainer{
+  background-color: black;
+  color: wheat;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.middleFooter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rigtFooter{
+  border: none;
+
+}
+
+.buttonFooter{
+  font-size: xx-large;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  color: wheat;
+}

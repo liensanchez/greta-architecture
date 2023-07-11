@@ -1,26 +1,34 @@
 import React from 'react'
+import './Footer.css'
+import { BsInstagram } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
+import { BsFacebook } from "react-icons/bs";
+
+
+
+
 
 function Footer() {
   return (
-    <div>
+    <div className='footerContainer'>
 
-      <div>
+      <div className='leftFooter'>
         <h2>Gretta</h2>
-        <button>Projects</button>
-        <button>Process</button>
-        <button>About</button>
-        <button>Contact</button>
-        <button>F</button>
-        <button>I</button>
-        <button>T</button>
-        <button>L</button>
       </div>
 
-    <div>
-      <h3>2023 Gretta. All rights reserved</h3>
-      <a href="">Privacy Policy</a>
-      <a href="">Terms of Service</a>
-    </div>
+      <div className='middleFooter'>
+        <h3>2023 Gretta. All rights reserved</h3>
+        <a href="">Privacy Policy</a>
+        <a href="">Terms of Service</a>
+      </div>
+
+      <div className='rigtFooter'>
+        <button className='buttonFooter'><BsFacebook/></button>
+        <button className='buttonFooter'><BsInstagram/></button>
+        <button className='buttonFooter'><BsTwitter/></button>
+        <button className='buttonFooter'><BsLinkedin/></button>
+      </div>
 
     </div>
   )
