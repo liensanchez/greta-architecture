@@ -4,7 +4,7 @@ import img1 from '../../assets/Dersert Image 4.png'
 import img2 from '../../assets/City Image 3.png'
 import { BsArrowUpRight } from "react-icons/bs";
 
-function Portfolio() {
+function Portfolio({credit}) {
   return (
     <div className='portfolioContainer'>
       <div className='portfolioDisplay'>
@@ -16,7 +16,7 @@ function Portfolio() {
           <div className="portfolioDescription">
             <p>A luxury landscape Villa located in Zion, Utah. Currently under construction, the property is set to open in late 2024.</p>
           </div>
-          <button className='buttonShowProject'>View Project <BsArrowUpRight/></button>
+          <button className='buttonShowProject'  onClick={() => credit()}>View Project <BsArrowUpRight/></button>
         </div>
       </div>
 
@@ -32,7 +32,7 @@ function Portfolio() {
             <div className="portfolioDescription">
               <p>Effortless elegance and the client’s sense of style define this family home in Chelsea, London.</p>
             </div>
-            <button className='buttonShowProject'>View Project <BsArrowUpRight/></button>
+            <button className='buttonShowProject'  onClick={() => credit()}>View Project <BsArrowUpRight/></button>
           </div>
         </div>
       </div>

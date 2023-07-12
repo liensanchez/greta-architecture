@@ -9,7 +9,7 @@ import { BsFacebook } from "react-icons/bs";
 
 
 
-function Footer() {
+function Footer({credit}) {
   return (
     <div className='footerContainer'>
 
@@ -24,10 +24,10 @@ function Footer() {
       </div>
 
       <div className='rigtFooter'>
-        <button className='buttonFooter'><BsFacebook/></button>
-        <button className='buttonFooter'><BsInstagram/></button>
-        <button className='buttonFooter'><BsTwitter/></button>
-        <button className='buttonFooter'><BsLinkedin/></button>
+        <button className='buttonFooter'  onClick={() => credit()}><BsFacebook/></button>
+        <button className='buttonFooter'  onClick={() => credit()}><BsInstagram/></button>
+        <button className='buttonFooter'  onClick={() => credit()}><BsTwitter/></button>
+        <button className='buttonFooter'  onClick={() => credit()}><BsLinkedin/></button>
       </div>
 
     </div>

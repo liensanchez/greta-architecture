@@ -11,9 +11,9 @@ function Navbar({credit}) {
       <h2>Gretta</h2>
         
       <div className="middleMenu">
-        <button className="buttonMiddleMenu">Projects</button>
-        <button className="buttonMiddleMenu">Process</button>
-        <button className="buttonMiddleMenu">About</button>
+        <button className="buttonMiddleMenu" onClick={() => credit()}>Projects</button>
+        <button className="buttonMiddleMenu" onClick={() => credit()}>Process</button>
+        <button className="buttonMiddleMenu" onClick={() => credit()}>About</button>
       </div>
 
       <button className='buttonCallToAction' onClick={() => credit()}>Get in touch <BsArrowUpRight/> </button>

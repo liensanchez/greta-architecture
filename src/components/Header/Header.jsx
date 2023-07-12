@@ -9,7 +9,7 @@ import image6 from '../../assets/Project A - Image 10.png'
 import { BsArrowUpRight } from "react-icons/bs";
 
 
-function Header() {
+function Header({credit}) {
 
   const imgCarousel= [image1, image2, image3, image4, image5, image6]
 
@@ -29,7 +29,7 @@ function Header() {
         <div className="headerRight">
           <h2>MADE BETTER</h2>
           <h2>WITH GRETTA</h2>
-          <button className='buttonCallToAction'>View our Work <BsArrowUpRight/></button>
+          <button className='buttonCallToAction' onClick={() => credit()}>View our Work <BsArrowUpRight/></button>
         </div>
 
         <div className="headerLeft">

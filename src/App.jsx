@@ -7,6 +7,7 @@ import Portfolio from './components/Portfolio/Portfolio'
 import Team from './components/Team/Team'
 import Footer from './components/Footer/Footer'
 import React, {useState} from 'react'
+import { BsLinkedin, BsXLg, BsGithub } from "react-icons/bs";
 
 function App() {
 
@@ -20,21 +21,28 @@ function App() {
   return (
     <>
       {notifications && 
-        <div className='notification'>
-          <h2>This is not a real website it was made by</h2>
-          <a href="">Lien Silvio Sanchez</a>
-          <h2>From a Template made for Relume Design Leguage by:</h2>
-          <a href="https://www.linkedin.com/in/niccolomiranda/" target='blank'>Niccolo Miranda</a>
-          <button onClick={() => credit()}>x</button>
+        <div className='notificationContainer'>
+          <div className='notificationContent'>
+            <h2>This is not a real website it was made by</h2>
+            <a href="https://www.linkedin.com/in/liensanchez/" target='blank'>Lien Silvio Sanchez</a>
+            <div className='notificationRRSS'>
+              <a href="https://www.linkedin.com/in/liensanchez/" target='blank'><button className='buttonFooter'><BsLinkedin/></button></a>
+              <a href="https://github.com/liensanchez" target='blank'><button className='buttonFooter'><BsGithub/></button></a>
+            </div>
+            <h2>From a Template made for Relume Design Leguage by:</h2>
+            <a href="https://www.linkedin.com/in/niccolomiranda/" target='blank'>Niccolo Miranda</a>
+            <a href="https://www.linkedin.com/in/niccolomiranda/" target='blank'><button className='buttonFooter'><BsLinkedin/></button></a>
+            <button onClick={() => credit()} className='notificationClose'><BsXLg/></button>
+          </div>
         </div>
         }
       <Navbar credit={credit}/>
-      <Header/>
-      <Experience/>
-      <Showcase/>
-      <Portfolio/>
+      <Header credit={credit}/>
+      <Experience />
+      <Showcase />
+      <Portfolio credit={credit}/>
       <Team/>
-      <Footer/>
+      <Footer credit={credit}/>
     </>
   )
 }
