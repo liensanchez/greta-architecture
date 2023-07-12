@@ -2,8 +2,9 @@ import React from 'react'
 import './NavBar.css'
 import { BsArrowUpRight } from "react-icons/bs";
 
+function Navbar({credit}) {
 
-function Navbar() {
+
   return (
 
     <div className='menu'>
@@ -15,7 +16,7 @@ function Navbar() {
         <button className="buttonMiddleMenu">About</button>
       </div>
 
-      <button className='buttonCallToAction'>Get in touch <BsArrowUpRight/> </button>
+      <button className='buttonCallToAction' onClick={() => credit()}>Get in touch <BsArrowUpRight/> </button>
     </div>
   )
 }
