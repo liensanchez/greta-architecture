@@ -1,9 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import { BsInstagram } from "react-icons/bs";
-import { BsTwitter } from "react-icons/bs";
-import { BsLinkedin } from "react-icons/bs";
-import { BsFacebook } from "react-icons/bs";
+import { BsInstagram, BsFacebook, BsLinkedin, BsTwitter } from "react-icons/bs";
 
 
 
