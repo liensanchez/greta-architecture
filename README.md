@@ -16,9 +16,11 @@ This GitHub repository is a website inspired by Niccolo Miranda's design for the
 
 ## Screenshots
 
+![Final](https://i.ibb.co/ckmtcWL/gerta.png)
+
 ![Wireframe](https://i.ibb.co/gRF8zPS/Wireframe-Niccolo.png)
 
-![Final](https://i.ibb.co/ckmtcWL/gerta.png)
+
 
 
 
