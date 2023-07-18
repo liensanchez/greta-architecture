@@ -16,7 +16,7 @@ This GitHub repository is a website inspired by Niccolo Miranda's design for the
 
 ## Screenshots
 
-![Final](https://i.ibb.co/F5KCgCq/Captura-de-pantalla-2023-07-18-021931.png)
+![Final](https://i.ibb.co/F5KCgCq/Gretta-architecture.png)
 
 ![Wireframe](https://i.ibb.co/gRF8zPS/Wireframe-Niccolo.png)
 
