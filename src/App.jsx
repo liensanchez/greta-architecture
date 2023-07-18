@@ -6,7 +6,7 @@ import Showcase from './components/Showcase/Showcase'
 import Portfolio from './components/Portfolio/Portfolio'
 import Team from './components/Team/Team'
 import Footer from './components/Footer/Footer'
-import React, {useState} from 'react'
+import {useState} from 'react'
 import { BsLinkedin, BsXLg, BsGithub } from "react-icons/bs";
 
 function App() {
