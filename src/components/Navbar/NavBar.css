@@ -3,7 +3,7 @@
   padding: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: transparent;
   color: wheat;
   font-size: 20px;
@@ -12,9 +12,7 @@
 }
 
 .buttonMiddleMenu{
-  padding-top: 10px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 10px;
   border: none;
   background-color: transparent;
   border-bottom: 2px solid transparent;

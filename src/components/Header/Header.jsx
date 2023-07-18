@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect  } from 'react'
 import './Header.css'
 import image1 from '../../assets/Project A - Image 5.png'
 import image2 from '../../assets/Project A - Image 6.png'
@@ -13,8 +13,18 @@ function Header({credit}) {
 
   const imgCarousel= [image1, image2, image3, image4, image5, image6]
 
-  const [imgShow, setImgShow] = useState(imgCarousel[0])
+  const [imgShow, setImgShow] = useState(imgCarousel[3])
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const currentIndex = imgCarousel.indexOf(imgShow);
+      const nextIndex = (currentIndex + 1) % imgCarousel.length;
+      setImgShow(imgCarousel[nextIndex]);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, [imgCarousel, imgShow]);
+  
   return (
     <div className='headerDisplay'>
   
@@ -40,6 +50,7 @@ function Header({credit}) {
             </button>
           ))}
         </div>
+
 
       </div>
 

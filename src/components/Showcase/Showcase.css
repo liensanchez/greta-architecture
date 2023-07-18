@@ -35,9 +35,9 @@
 }
 
 .showcaseImg{
-  padding-top: 3vh;
   width: 533px;
   height: 400px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .showcaseCarouselImg{
